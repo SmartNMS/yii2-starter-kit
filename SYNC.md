@@ -36,7 +36,6 @@ upstream  https://github.com/ORIGINAL_OWNER/ORIGINAL_REPOSITORY.git (push)
 Sync a fork of a repository to keep it up-to-date with the upstream repository.
 
 Before you can sync your fork with an upstream repository, you must configure a remote that points to the upstream repository in Git.
-
 (https://help.github.com/articles/syncing-a-fork/#platform-linux)
 
 1. Open Terminal.
