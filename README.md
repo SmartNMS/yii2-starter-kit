@@ -340,3 +340,38 @@ This template was created mostly for developers NOT for end users.
 This is a point where you can begin your application, rather than creating it from scratch.
 Good luck!
 
+### Configuring a remote for a fork
+To sync changes you make in a fork with the original repository, you must configure a remote that points to the upstream repository in Git.
+https://help.github.com/articles/configuring-a-remote-for-a-fork/#platform-linux
+
+Open Terminal.
+
+List the current configured remote repository for your fork.
+```
+git remote -v
+```
+origin  https://github.com/YOUR_USERNAME/YOUR_FORK.git (fetch)
+origin  https://github.com/YOUR_USERNAME/YOUR_FORK.git (push)
+
+Specify a new remote upstream repository that will be synced with the fork.
+```
+git remote add upstream https://github.com/ORIGINAL_OWNER/ORIGINAL_REPOSITORY.git
+git remote add upstream https://github.com/trntv/yii2-starter-kit.git
+```
+
+Verify the new upstream repository you've specified for your fork.
+```
+git remote -v
+```
+origin    https://github.com/YOUR_USERNAME/YOUR_FORK.git (fetch)
+origin    https://github.com/YOUR_USERNAME/YOUR_FORK.git (push)
+upstream  https://github.com/ORIGINAL_OWNER/ORIGINAL_REPOSITORY.git (fetch)
+upstream  https://github.com/ORIGINAL_OWNER/ORIGINAL_REPOSITORY.git (push)
+
+### Syncing a fork
+Sync a fork of a repository to keep it up-to-date with the upstream repository.
+
+Before you can sync your fork with an upstream repository, you must configure a remote that points to the upstream repository in Git.
+
+https://help.github.com/articles/syncing-a-fork/#platform-linux
+
